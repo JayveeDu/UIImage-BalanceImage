@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3h7-tQ-GUK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="nPW-Y4-nWX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txn-SH-Nc7">
+                                <rect key="frame" x="170" y="201" width="34" height="30"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="clickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RN9-rA-Fve"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIv-LS-Glj">
+                                <rect key="frame" x="0.0" y="331" width="375" height="250"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4s8-SQ-fvU">
+                                        <rect key="frame" x="166.5" y="87.5" width="42" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="xY4-8c-RvH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyc-tz-DuI">
+                                        <rect key="frame" x="166.5" y="115" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.53725490200000003" green="0.20784313730000001" blue="0.1637912326" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Oyc-tz-DuI" firstAttribute="width" relation="lessThanOrEqual" secondItem="sIv-LS-Glj" secondAttribute="width" constant="-20" id="B4G-zD-KC1"/>
+                                    <constraint firstItem="Oyc-tz-DuI" firstAttribute="centerY" secondItem="sIv-LS-Glj" secondAttribute="centerY" id="EFR-IP-cqZ"/>
+                                    <constraint firstAttribute="height" constant="250" id="PRV-Lz-RF8"/>
+                                    <constraint firstItem="4s8-SQ-fvU" firstAttribute="centerX" secondItem="sIv-LS-Glj" secondAttribute="centerX" id="YSa-1d-SKo"/>
+                                    <constraint firstItem="4s8-SQ-fvU" firstAttribute="centerY" secondItem="sIv-LS-Glj" secondAttribute="centerY" id="c4d-Au-nLy"/>
+                                    <constraint firstItem="4s8-SQ-fvU" firstAttribute="width" secondItem="Oyc-tz-DuI" secondAttribute="width" id="qpO-q6-vOi"/>
+                                    <constraint firstItem="Oyc-tz-DuI" firstAttribute="centerX" secondItem="sIv-LS-Glj" secondAttribute="centerX" id="zlA-M4-r01"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sIv-LS-Glj" secondAttribute="trailing" id="5ds-Mm-giZ"/>
+                            <constraint firstItem="sIv-LS-Glj" firstAttribute="top" secondItem="txn-SH-Nc7" secondAttribute="bottom" constant="100" id="Ckz-ry-UY5"/>
+                            <constraint firstItem="3h7-tQ-GUK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Wbx-YB-Adz"/>
+                            <constraint firstItem="txn-SH-Nc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ejD-kZ-qmM"/>
+                            <constraint firstItem="txn-SH-Nc7" firstAttribute="top" secondItem="3h7-tQ-GUK" secondAttribute="bottom" constant="31" id="j9K-dc-msI"/>
+                            <constraint firstItem="3h7-tQ-GUK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kUx-Z4-085"/>
+                            <constraint firstItem="sIv-LS-Glj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pVJ-Mw-xRt"/>
+                            <constraint firstAttribute="trailing" secondItem="3h7-tQ-GUK" secondAttribute="trailing" id="qcv-Jf-JU5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="4s8-SQ-fvU" id="tk9-fd-ce7"/>
+                        <outlet property="label" destination="Oyc-tz-DuI" id="3f9-Jd-7QU"/>
+                        <outlet property="textView" destination="3h7-tQ-GUK" id="8O9-i6-met"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
